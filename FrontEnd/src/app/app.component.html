@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <input required [(ngModel)]="name" type="text" placeholder="enter a name">
+  <button (click)="getResponse()">try age</button>
+</div>
+<div *ngIf="isMadeRequest" class="Response">
+  <div (click)="isMadeRequest = !isMadeRequest">x</div>
+  You are {{response.age}} years old
+</div>
